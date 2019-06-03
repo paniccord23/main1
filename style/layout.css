@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html, body {
+  overflow-x: hidden;
+}
+nav {
+  width: 100%;
+  height: 45px;
+  background: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: fixed;
+  z-index: 5;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+	font-family: "GOTHICB";
+  font-weight: bold;
+}
+.more-nav {
+	display: none;
+}
+h1, h2, h3, h5 .more {
+  font-family: "GOTHICB";
+  font-weight: bold;
+}
+h1 {
+  font-size: 24px;
+  padding-bottom: 4px;
+}
+main {
+  background-color: #F0F0F0;
+}
+.left {
+  padding-top: 44px;
+  height: 690px;
+
+}
+.left-info {
+  padding-left: 20px;
+}
+.main-img {
+  width: 40vw;
+}
+.right {
+  padding-left: 20px;
+}
+
+h5 {
+  font-family: "GOTHICB";
+  font-weight: bold;
+  color: #333333;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+p {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  line-height: 130%;
+  font-size: 14px;
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+.more-info {
+  font-family: "GOTHICB";
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+footer {
+  background-color: #101010;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.facebook {
+  position: relative;
+  top: -8px;
+}
+.large {
+  display: none;
+}
+.first-st {
+  width: 94vw;
+  position: relative;
+    right: -7px;
+}
+.posters-small {
+  display: unset;
+}
+.line {
+  width: 10vw;
+}
+.arrow {
+  width: 9vw;
+}
+.posters-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.small-zoo {
+  width: 100vw;
+  padding-bottom: 80px;
+  padding-top: 70px;
+}
+.z {
+  padding-left: 20px;
+}
+.rebr-sm {
+  padding-bottom: 50px;
+}
+@media (min-width: 375px; max-width: 426px) {
+  .small {
+    display: unset;
+  }
+}
+@media (min-width:768px; max-width:1023px ) {
+  .left {
+    display: flex;
+    flex-direction: row;
+  }
+  .small {
+    display: none;
+  }
+  .large {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .small {
+    display: none;
+  }
+  .large {
+    display: unset;
+  }
+  .posters-small {
+    display: none;
+  }
+	nav {
+		height: 68px;
+		justify-content: flex-start;
+	}
+
+	.more-nav {
+		display: unset;
+		padding-left: 102px;
+	}
+	.more-nav a {
+    display: inline-block;
+    line-height: 0.2;
+    text-decoration: none;
+    cursor: pointer;
+}
+	.more-nav a:after {
+    background-color: #FDE40E;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 3px;
+    margin-left: -10px;
+
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.more-nav a:hover:after,
+.more-nav a:focus:after {
+    width: 100%;
+    padding-left: 20px;
+}
+	.more-nav a {
+		padding-right: 30px;
+	}
+  .more {
+    cursor: pointer;
+  }
+	.first {
+		height: 50px;
+	}
+	.last {
+		display: none;
+	}
+  .line {
+    width: 7vw;
+  }
+  h1 {
+    font-size: 52px;
+    padding-bottom: 14px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  p {
+    padding-top: 50px;
+    font-size: 30px;
+    width: 681px;
+    padding-bottom: 85px;
+    }
+
+  .left {
+    padding-top: 120px;
+    height: 850px;
+    display: flex;
+    flex-direction: row;
+  }
+  .left-info {
+    padding-left: 100px;
+  }
+  .main-img {
+    width: 50vw;
+    height: 50vw;
+    margin-top: -80px;
+    margin-left: -110px;
+  }
+  .more-info {
+    font-size: 26px;
+  }
+  .arrow {
+    width: 4vw;
+  }
+  .text {
+    width: 666px;
+  }
+  .right, .right-zoo {
+    display: flex;
+    flex-direction: row;
+    height: 660px;
+  }
+  .right {
+    padding-left: 72px;
+  }
+  .post-img {
+    padding-right: 120px;
+    height: 40vw;
+  }
+  .more-posters {
+    display: flex;
+    justify-content: space-around;
+  }
+  .more-posters img {
+    width: 30vw;
+    height: 40vw;
+  }
+  .right-zoo {
+    padding-top: 200px;
+  }
+  .right-zoo p {
+    width: 550px;
+  }
+
+  .zoo {
+    height: 25vw;
+  }
+  .book {
+    padding-top: 250px;
+  }
+  .rebr {
+    padding-top: 100px;
+  }
+}
